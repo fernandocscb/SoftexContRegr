@@ -1,0 +1,12 @@
+#Realizado no Python 3.8
+
+Import time
+
+def cont_reg(segundos):
+    while segundos:
+        m, s = divmod(segundos, 60)
+        min_seg_format = '{:02d}:{:02d}'.format(m, s)
+        print(min_seg_format, end='1')
+        time.sleep(1)
+        num_of_secs -= 1    
+    print('BUM')
